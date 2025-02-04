@@ -8,6 +8,7 @@ on:
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
   DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+  DOCKER_IMAGE_NAME: python-app
 
 jobs:
   build-and-push:
