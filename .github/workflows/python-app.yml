@@ -8,13 +8,6 @@ on:
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
   DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  AWS_REGION: us-west-2
-  ECR_REPOSITORY: your-ecr-repo-name
-  DOCKER_IMAGE_NAME: python-app
-  KUBE_CLUSTER_NAME: your-eks-cluster-name
-  KUBE_NAMESPACE: default
 
 jobs:
   build-and-push:
